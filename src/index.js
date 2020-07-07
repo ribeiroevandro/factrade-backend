@@ -13,4 +13,4 @@ app.get("/", (req, res) => {
 
 require("./app/controllers/index")(app); //todos os controllers criados sao importados automaticamente
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
